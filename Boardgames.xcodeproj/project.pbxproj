@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C3B79272949FDD20065E999 /* BoardgamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B79262949FDD20065E999 /* BoardgamesViewModel.swift */; };
+		9C3B79292949FE1D0065E999 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B79282949FE1D0065E999 /* BoardView.swift */; };
+		9C3B792B2949FE530065E999 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B792A2949FE530065E999 /* SearchView.swift */; };
 		BF8F402828B8295F6B891834 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8F400F8A3A4E3C74494CDA /* Preview Assets.xcassets */; };
 		BF8F404B6F71C73EF32F07C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8F4A6B3E26408333C2BB72 /* ContentView.swift */; };
 		BF8F4297516133EFEB666D9C /* BoardgamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8F4DC5CF53921F05761BF6 /* BoardgamesApp.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C3B79262949FDD20065E999 /* BoardgamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardgamesViewModel.swift; sourceTree = "<group>"; };
+		9C3B79282949FE1D0065E999 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		9C3B792A2949FE530065E999 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BF8F400F8A3A4E3C74494CDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8F4092A467D994876B0E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8F41D3D1CF4607C84B6AD1 /* Boardgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boardgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +98,7 @@
 		BF8F469F0DE2E6A3F393255A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9C3B79262949FDD20065E999 /* BoardgamesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -130,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				BF8F4A6B3E26408333C2BB72 /* ContentView.swift */,
+				9C3B79282949FE1D0065E999 /* BoardView.swift */,
+				9C3B792A2949FE530065E999 /* SearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,11 +221,14 @@
 /* Begin PBXProject section */
 		BF8F446207661A13D49CE23B /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = BF8F448297ACACB67FBFCBB1 /* Build configuration list for PBXProject "Boardgames" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = BF8F47B8CDB34AF0B1F147BB;
@@ -271,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3B792B2949FE530065E999 /* SearchView.swift in Sources */,
 				BF8F4297516133EFEB666D9C /* BoardgamesApp.swift in Sources */,
+				9C3B79292949FE1D0065E999 /* BoardView.swift in Sources */,
+				9C3B79272949FDD20065E999 /* BoardgamesViewModel.swift in Sources */,
 				BF8F404B6F71C73EF32F07C6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +379,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -543,6 +557,7 @@
 				BF8F496D433A4975CD3BD99B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8F4DA5633D259FC7A310E6 /* Build configuration list for PBXNativeTarget "Boardgames" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +566,7 @@
 				BF8F4477A7B3F48D9F0DA235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8F4E3530E54FE47D4779AF /* Build configuration list for PBXNativeTarget "BoardgamesTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +575,7 @@
 				BF8F473841AC3121E1676F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

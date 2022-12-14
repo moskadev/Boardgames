@@ -9,12 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = BoardGamesViewModel()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            BoardView(viewModel: viewModel)
+                    .tabItem {
+                        Label("Jeux", systemImage: "dice")
+                    }
+            SearchView(viewModel: viewModel)
+                    .tabItem {
+                        Label("Recherche", systemImage: "magnifyingglass")
+                    }
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
