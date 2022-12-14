@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 @MainActor
-class BoardGamesViewModel: ObservableObject {
+class BoardgamesViewModel: ObservableObject {
     @Published var searchedGames = [Game]()
     @Published var listGames = [Game]()
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
-    @ObservedObject var viewModel: BoardGamesViewModel
+    @ObservedObject var viewModel: BoardgamesViewModel
     @State private var searchText = ""
     var body: some View {
         NavigationView {

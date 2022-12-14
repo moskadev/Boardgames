@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = BoardGamesViewModel()
+    @StateObject var viewModel = BoardgamesViewModel()
 
     var body: some View {
         TabView {
