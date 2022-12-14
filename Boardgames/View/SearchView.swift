@@ -13,12 +13,15 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             List {
-                
+                GameListView(games: viewModel.searchedGames)
             }
                 .navigationTitle(Text("Rechercher"))
                 .searchable(text: $searchText)
-                   
+                .onChange(of: searchText) { s in
+                    Task {
+                        try? await viewModel.searchGames(name: s);
+                    }
+                }
         }
-
     }
 }
