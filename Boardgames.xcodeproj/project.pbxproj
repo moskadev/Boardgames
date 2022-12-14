@@ -10,6 +10,8 @@
 		9C3B79272949FDD20065E999 /* BoardgamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B79262949FDD20065E999 /* BoardgamesViewModel.swift */; };
 		9C3B79292949FE1D0065E999 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B79282949FE1D0065E999 /* BoardView.swift */; };
 		9C3B792B2949FE530065E999 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B792A2949FE530065E999 /* SearchView.swift */; };
+		9C3B792D2949FF4D0065E999 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B792C2949FF4D0065E999 /* Game.swift */; };
+		9C3B792F2949FF8D0065E999 /* GameFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3B792E2949FF8D0065E999 /* GameFetcher.swift */; };
 		BF8F402828B8295F6B891834 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8F400F8A3A4E3C74494CDA /* Preview Assets.xcassets */; };
 		BF8F404B6F71C73EF32F07C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8F4A6B3E26408333C2BB72 /* ContentView.swift */; };
 		BF8F4297516133EFEB666D9C /* BoardgamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8F4DC5CF53921F05761BF6 /* BoardgamesApp.swift */; };
@@ -40,6 +42,8 @@
 		9C3B79262949FDD20065E999 /* BoardgamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardgamesViewModel.swift; sourceTree = "<group>"; };
 		9C3B79282949FE1D0065E999 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		9C3B792A2949FE530065E999 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		9C3B792C2949FF4D0065E999 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9C3B792E2949FF8D0065E999 /* GameFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFetcher.swift; sourceTree = "<group>"; };
 		BF8F400F8A3A4E3C74494CDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF8F4092A467D994876B0E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8F41D3D1CF4607C84B6AD1 /* Boardgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boardgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				BF8F4DC5CF53921F05761BF6 /* BoardgamesApp.swift */,
+				9C3B792C2949FF4D0065E999 /* Game.swift */,
+				9C3B792E2949FF8D0065E999 /* GameFetcher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C3B792B2949FE530065E999 /* SearchView.swift in Sources */,
+				9C3B792D2949FF4D0065E999 /* Game.swift in Sources */,
 				BF8F4297516133EFEB666D9C /* BoardgamesApp.swift in Sources */,
+				9C3B792F2949FF8D0065E999 /* GameFetcher.swift in Sources */,
 				9C3B79292949FE1D0065E999 /* BoardView.swift in Sources */,
 				9C3B79272949FDD20065E999 /* BoardgamesViewModel.swift in Sources */,
 				BF8F404B6F71C73EF32F07C6 /* ContentView.swift in Sources */,
